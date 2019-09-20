@@ -85,7 +85,7 @@ module Shoulda
           elsif [Fixnum, Float].include?(attribute_class)
             1
           elsif attribute_class == BigDecimal
-            BigDecimal.new(1, 0)
+            BigDecimal(1, 0)
           elsif !attribute_class || attribute_class == String
             'an arbitrary value'
           else

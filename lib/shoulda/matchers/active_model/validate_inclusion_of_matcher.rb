@@ -248,7 +248,7 @@ module Shoulda
       class ValidateInclusionOfMatcher < ValidationMatcher
         ARBITRARY_OUTSIDE_STRING = 'shouldamatchersteststring'
         ARBITRARY_OUTSIDE_FIXNUM = 123456789
-        ARBITRARY_OUTSIDE_DECIMAL = BigDecimal.new('0.123456789')
+        ARBITRARY_OUTSIDE_DECIMAL = BigDecimal('0.123456789')
         BOOLEAN_ALLOWS_BOOLEAN_MESSAGE = <<EOT
 You are using `validate_inclusion_of` to assert that a boolean column allows
 boolean values and disallows non-boolean ones. Be aware that it is not possible
